@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React 기반 포트폴리오 사이트입니다.  
+대표 프로젝트 `oneulFarm`을 중심으로 `hashTrip`, `Pet-Lab`을 함께 소개하며, 정적 배포 환경에서도 안전하게 동작하도록 `HashRouter`를 사용했습니다.
 
-## Available Scripts
-
-In the project directory, you can run:
+## Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+개발 서버를 실행합니다.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+테스트를 실행합니다.
 
 ### `npm run build`
+배포용 정적 파일을 `build/`에 생성합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## GitHub Pages 배포 메모
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. 의존성을 설치합니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+2. 정적 빌드를 생성합니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. GitHub Pages에 `build/` 결과물을 배포합니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 이 프로젝트는 `HashRouter`를 사용하므로 GitHub Pages 새로고침 시 라우팅 오류를 피할 수 있습니다.
+- `package.json`의 `homepage`를 `"."`로 설정해 상대 경로 기반 정적 배포에 유리하도록 구성했습니다.
+- GitHub Actions 또는 별도 배포 스크립트로 `build/` 폴더를 업로드하면 됩니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Structure
 
-## Learn More
+- `src/data/projects.js`: 프로젝트 데이터
+- `src/data/siteContent.js`: 메인 문구, 스킬, 연락처 데이터
+- `src/pages/*`: 라우트 단위 페이지
+- `src/components/*`: 재사용 컴포넌트
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 시연 영상, 문서, Notion 링크가 비어 있어도 UI가 깨지지 않도록 처리했습니다.
+- 다크모드 토글 상태는 `localStorage`에 저장됩니다.

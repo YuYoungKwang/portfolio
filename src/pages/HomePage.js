@@ -222,7 +222,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Contact"
           title="연락처"
-          description="GitHub와 이메일로 연락하실 수 있습니다."
+          description="GitHub, 이메일, 휴대폰 번호로 연락하실 수 있습니다."
         />
 
         <div className="contact-grid">

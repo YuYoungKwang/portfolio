@@ -113,11 +113,11 @@ export const projects = [
     tags: ['React', 'Spring MVC', 'Oracle', 'Price Data', 'Recipe', 'Commerce'],
     links: {
       github: projectRepoLinks.oneulfarm,
-      demo: '',
+      demo: 'https://www.youtube.com/watch?v=yCoXKFV9XgQ',
       docs: '',
     },
     media: {
-      demoEmbed: '',
+      demoEmbed: 'https://www.youtube.com/embed/yCoXKFV9XgQ',
     },
     featured: true,
     tone: 'primary',
@@ -219,11 +219,11 @@ export const projects = [
     tags: ['JSP', 'Spring MVC', 'MyBatis', 'Oracle', 'Travel Service', 'File Upload'],
     links: {
       github: projectRepoLinks.hashtrip,
-      demo: 'https://www.youtube.com/watch?v=9Nx8IBv-WVk',
+      demo: 'https://www.youtube.com/watch?v=0tYfGEuP6qw',
       docs: '',
     },
     media: {
-      demoEmbed: 'https://www.youtube.com/embed/9Nx8IBv-WVk',
+      demoEmbed: 'https://www.youtube.com/embed/0tYfGEuP6qw',
     },
     featured: false,
     tone: 'secondary',
@@ -328,11 +328,11 @@ export const projects = [
     tags: ['React', 'Frontend', 'State Sync', 'Step Form', 'Wishlist', 'Order Flow'],
     links: {
       github: projectRepoLinks.petlab,
-      demo: 'https://www.youtube.com/watch?v=xhzR_GX8uCE',
+      demo: 'https://www.youtube.com/watch?v=vpgaXZiqIns',
       docs: '',
     },
     media: {
-      demoEmbed: 'https://www.youtube.com/embed/xhzR_GX8uCE',
+      demoEmbed: 'https://www.youtube.com/embed/vpgaXZiqIns',
     },
     featured: false,
     tone: 'support',

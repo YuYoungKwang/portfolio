@@ -72,6 +72,12 @@ export const siteContent = {
       description: '협업이나 채용 관련 연락을 받을 수 있습니다.',
       type: 'secondary',
     },
+    {
+      label: 'Phone 010-2629-6348',
+      href: 'tel:01026296348',
+      description: '휴대폰으로도 연락을 받을 수 있습니다.',
+      type: 'secondary',
+    },
   ],
   footerText: '© 2026 유영광. Built with React.',
 };

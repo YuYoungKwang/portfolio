@@ -13,6 +13,7 @@ function buildToneClass(tone) {
 
 export default function ProjectCard({ project, size = 'default', showLinks = true }) {
   const previewItems = project.contributions.slice(0, size === 'hero' ? 3 : 2);
+  const teamLabel = project.teamLabel || `팀 ${project.teamSize}명`;
   const quickLinks = [
     { label: 'GitHub', href: project.links.github },
     { label: '시연 영상', href: project.links.demo },
@@ -28,11 +29,12 @@ export default function ProjectCard({ project, size = 'default', showLinks = tru
         <div className="project-card__meta">
           <span className="project-card__period">{project.period}</span>
           {project.featured ? <span className="project-card__badge">대표 프로젝트</span> : null}
+          {project.statusLabel ? <span className="project-card__badge">{project.statusLabel}</span> : null}
         </div>
 
         <div className="project-card__facts">
           <span>{project.type}</span>
-          <span>팀 {project.teamSize}명</span>
+          <span>{teamLabel}</span>
         </div>
       </div>
 

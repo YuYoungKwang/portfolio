@@ -59,6 +59,7 @@ export default function ProjectDetailPage() {
     { label: '문서', href: project.links.docs },
   ].filter((link) => link.href);
   const demoEmbedUrl = buildDemoEmbedUrl(project.media?.demoEmbed);
+  const teamLabel = project.teamLabel || `팀 ${project.teamSize}명`;
 
   return (
     <div className="page-shell page-shell--detail">
@@ -67,8 +68,11 @@ export default function ProjectDetailPage() {
           <div className="project-hero__meta">
             <span>{project.period}</span>
             <span>{project.type}</span>
-            <span>팀 {project.teamSize}명</span>
+            <span>{teamLabel}</span>
             {project.featured ? <span className="project-hero__badge">대표 프로젝트</span> : null}
+            {project.statusLabel ? (
+              <span className="project-hero__badge">{project.statusLabel}</span>
+            ) : null}
           </div>
 
           <h1>{project.title}</h1>

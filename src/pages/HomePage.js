@@ -212,7 +212,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Timeline"
           title="프로젝트 타임라인"
-          description="Pet-Lab, #Trip, oneulFarm 순으로 진행했습니다."
+          description="Pet-Lab, #Trip, oneulFarm에 이어 현재는 DevFlow를 개인 프로젝트로 진행 중입니다."
         />
 
         <Timeline items={projectTimeline} />

@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         <SectionHeading
           eyebrow="Projects"
           title="프로젝트"
-          description="진행한 프로젝트를 정리했습니다."
+          description="완료한 프로젝트와 현재 진행 중인 개인 프로젝트를 함께 정리했습니다."
         />
       </section>
 

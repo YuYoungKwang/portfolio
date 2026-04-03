@@ -30,7 +30,7 @@ export const siteContent = {
     },
   ],
   heroStats: [
-    { label: '프로젝트', value: '3' },
+    { label: '프로젝트', value: '4' },
     { label: '외부 연동', value: '7+' },
     { label: '구현 범위', value: '조회·주문·관리' },
   ],
